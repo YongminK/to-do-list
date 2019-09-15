@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from 'react';
+import ToDoList from '../containers/ToDo';
+import AddToDo from '../containers/AddToDo';
 
-// import '../styles/App.css';
-
-class App extends Component {
-    render() {
-        return (
-            <div>
-                <h1>My React App!</h1>
-            </div>
-        );
-    }
-}
+const App = () => (
+  <div className="w3-container">
+    <h1>To Do List</h1>
+    <AddToDo />
+    <ToDoList/>
+  </div>
+)
 
 export default App;
