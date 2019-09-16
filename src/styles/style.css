@@ -1,0 +1,33 @@
+.material-icons{
+    cursor: pointer;
+    color: #b8bab6;
+}
+.check-icon{
+    color: green;
+}
+.delete-icon{
+    color: #bf0410
+}
+.App{
+    display: flex;
+    justify-content: center;
+}
+.w3-container{
+    width: 500px;
+    margin-top: 50px;
+}
+.w3-input{
+    display: inline-block;
+    width: 380px;
+    margin-right: 20px;
+}
+.w3-bar .w3-bar-item{
+    width: 104px;
+}
+.send-icon{
+    margin-right: 10px;
+}
+ul{
+    margin: 20px 0;
+    padding: 0;
+}

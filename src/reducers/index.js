@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux';
-import tasksReducer from './actionToDo';
+import { combineReducers } from 'redux'
+import todos from './todos'
+import visibilityFilter from './filter'
 
-const combineReduce = combineReducers ({
-    action: tasksReducer
-});
-
-export default combineReduce;
+export default combineReducers({
+  todos,
+  visibilityFilter
+})
