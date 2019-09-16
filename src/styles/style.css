@@ -1,42 +1,52 @@
-.material-icons{
+.material-icons {
     cursor: pointer;
     color: #b8bab6;
 }
-.check-icon{
+
+.check-icon {
     color: green;
 }
-.delete-icon{
+
+.delete-icon {
     color: #bf0410
 }
-.App{
+
+.App {
     display: flex;
     justify-content: center;
 }
-.w3-container{
+
+.w3-container {
     width: 50%;
     margin-top: 50px;
 }
-.text-input{
+
+.text-input {
     display: inline-block;
     width: calc(100% - 80px);
     margin-right: 20px;
     cursor: pointer;
 }
-.text-input:focus{
-    outline:none;
+
+.text-input:focus {
+    outline: none;
     cursor: text;
 }
-.w3-bar .w3-bar-item{
+
+.w3-bar .w3-bar-item {
     min-width: 33%;
 }
-.send-icon{
+
+.send-icon {
     margin-right: 10px;
 }
-ul{
+
+ul {
     margin: 20px 0;
     padding: 0;
 }
-.edit-todo{
+
+.edit-todo {
     text-align: center;
     padding: 10px 0px;
     height: 46px;
@@ -44,57 +54,68 @@ ul{
     word-wrap: break-word;
 }
 
-.edit-todo:focus{
-    border-right:1px solid #D3D3D3;
-    border-left:1px solid #D3D3D3;
-    box-shadow:0 1px 2px rgba(0, 0, 0, 0.3) inset;
+.edit-todo:focus {
+    border-right: 1px solid #D3D3D3;
+    border-left: 1px solid #D3D3D3;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) inset;
     outline: none;
 }
-.w3-table td{
-    padding:0;
+
+.w3-table td {
+    padding: 0;
 }
-.table-td-check{
+
+.table-td-check {
     padding: 8px 8px 8px 16px !important;
     width: 50px;
 }
-.table-td-delete{
-    padding: 8px!important;
+
+.table-td-delete {
+    padding: 8px !important;
     width: 50px;
 }
-.todo-text{
+
+.todo-text {
     overflow: auto;
-   
+
 }
+
 .w3-allerta {
     font-family: "Allerta Stencil", Sans-serif;
 }
-.clear-completed{
+
+.clear-completed {
     text-decoration: underline;
     padding: 0;
 }
 
 @media screen and (max-width: 454px) {
-    .w3-container{
+    .w3-container {
         width: 100%;
     }
-    .text-input{
+
+    .text-input {
         width: 100%;
     }
-    .send-icon, .cancel-icon{
+
+    .send-icon,
+    .cancel-icon {
         display: none;
     }
-    .w3-bar .w3-bar-item{
-       width: 33%;
+
+    .w3-bar .w3-bar-item {
+        width: 33%;
     }
-    .text-input{
+
+    .text-input {
         margin: 0;
         width: 100%;
     }
-    
-  }
 
-@media screen and (max-width: 768px) and (min-width: 455px){    
-    .w3-container{
-        width: 80%;        
-    }    
+}
+
+@media screen and (max-width: 768px) and (min-width: 455px) {
+    .w3-container {
+        width: 80%;
+    }
 }

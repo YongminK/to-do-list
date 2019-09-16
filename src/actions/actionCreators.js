@@ -1,12 +1,12 @@
-import 
-    {   ADD_TODO,
-        REMOVE_TODO,
-        TOGGLE_TODO,
-        SET_VISIBILITY_FILTER,
-        CLEAR_COMPLETED,
-        COMPLETE_ALL_TODO,
-        CLEAR_ALL
-    } from './actionTypes';
+import {
+    ADD_TODO,
+    REMOVE_TODO,
+    TOGGLE_TODO,
+    SET_VISIBILITY_FILTER,
+    CLEAR_COMPLETED,
+    COMPLETE_ALL_TODO,
+    CLEAR_ALL
+} from './actionTypes';
 
 let nextID = 2;
 
@@ -30,12 +30,15 @@ export const setVisibilityFilter = (filter) => ({
     type: SET_VISIBILITY_FILTER,
     filter
 });
-export const clearCompleted = () =>({
+
+export const clearCompleted = () => ({
     type: CLEAR_COMPLETED
 });
+
 export const completeAllTodo = () => ({
     type: COMPLETE_ALL_TODO
 });
+
 export const clearAll = () => ({
     type: CLEAR_ALL
 });

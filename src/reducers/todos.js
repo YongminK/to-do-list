@@ -1,12 +1,11 @@
-import 
-    { 
-        ADD_TODO, 
-        REMOVE_TODO, 
-        TOGGLE_TODO, 
-        CLEAR_COMPLETED, 
-        COMPLETE_ALL_TODO, 
-        CLEAR_ALL
-    } from '../actions/actionTypes';
+import {
+    ADD_TODO,
+    REMOVE_TODO,
+    TOGGLE_TODO,
+    CLEAR_COMPLETED,
+    COMPLETE_ALL_TODO,
+    CLEAR_ALL
+} from '../actions/actionTypes';
 
 const INITIAL_DATA = [
     {
@@ -21,21 +20,21 @@ const INITIAL_DATA = [
     }
 ];
 
-const TodoReducer = (state=INITIAL_DATA, action) => {
-    switch (action.type){
+const TodoReducer = (state = INITIAL_DATA, action) => {
+    switch (action.type) {
         case ADD_TODO:
-        return [
-            ...state,{
-                id: action.id,
-                text: action.text,
-                completed: false,
-            }
-        ]
+            return [
+                ...state, {
+                    id: action.id,
+                    text: action.text,
+                    completed: false,
+                }
+            ]
         case TOGGLE_TODO:
-        return state.map(todo =>
-            (todo.id === action.id)
-            ? {...todo, completed: !todo.completed}
-            : todo
+            return state.map(todo =>
+                (todo.id === action.id)
+                    ? { ...todo, completed: !todo.completed }
+                    : todo
             )
         case REMOVE_TODO:
             const numIndex = parseInt(action.id)
