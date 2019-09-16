@@ -11,7 +11,7 @@ import {
 import { SHOW_ALL, SHOW_COMPLETED, SHOW_ACTIVE } from '../actions/actionTypes';
 import { bindActionCreators } from "redux";
 
-class ToDoList extends Component {
+class ToDoList extends Component { 
     render() {
         return (
             <div className="">
@@ -54,7 +54,7 @@ class ToDoList extends Component {
                         <tbody>
                             {this.props.todos.map(todo => (
                                 <tr key={todo.id} className='w3-border-bottom'>
-                                    <td>
+                                    <td className='table-td-check'>
                                         <i onClick={() => this.props.toggleTodo(todo.id)} className={'material-icons' + (todo.completed ? ' check-icon' : '')}>check_circle</i>
                                     </td>
                                     <td className='todo-text'
@@ -62,9 +62,11 @@ class ToDoList extends Component {
                                             textDecoration: todo.completed ? "line-through" : "none"
                                         }}
                                     >
-                                        {todo.text}
+                                        <div contentEditable = {todo.completed ? 'false' : 'true'} className='edit-todo'>
+                                            {todo.text}
+                                        </div>
                                     </td>
-                                    <td>
+                                    <td className='table-td-delete'>
                                         <i onClick={() => this.props.deleteTodo(todo.id)} className='material-icons delete-icon'>delete</i>
 
                                     </td>

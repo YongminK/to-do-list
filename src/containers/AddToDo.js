@@ -33,7 +33,7 @@ class AddToDo extends Component {
         return (
             <div>
                 <div>
-                    <input onChange={this.onChangeTodoText} value={this.state.todotext} type="text" className="w3-input" placeholder="What to do?" />
+                    <input maxLength='40' onChange={this.onChangeTodoText} value={this.state.todotext} type="text" className="w3-input text-input" placeholder="What to do?" />
                     <i className='material-icons send-icon' onClick={this.onClickAddToDo}>send</i>
                     <i className='material-icons ' onClick={this.onClickCancel }>cancel</i>
 

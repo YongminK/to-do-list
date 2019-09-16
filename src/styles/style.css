@@ -13,16 +13,19 @@
     justify-content: center;
 }
 .w3-container{
-    width: 500px;
+    width: 700px;
     margin-top: 50px;
 }
-.w3-input{
+.text-input{
     display: inline-block;
-    width: 380px;
+    width: 588px;
     margin-right: 20px;
 }
+.text-input:focus{
+    outline:none;
+}
 .w3-bar .w3-bar-item{
-    width: 104px;
+    width: 170px;
 }
 .send-icon{
     margin-right: 10px;
@@ -30,4 +33,30 @@
 ul{
     margin: 20px 0;
     padding: 0;
+}
+.edit-todo{
+    text-align: center;
+    padding: 10px 0px;
+    height: 46px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+.edit-todo:focus{
+    border-right:1px solid #D3D3D3;
+    border-left:1px solid #D3D3D3;
+    box-shadow:0 1px 2px rgba(0, 0, 0, 0.3) inset;
+    outline: none;
+}
+.w3-table td{
+    padding:0;
+}
+.table-td-check{
+    padding: 8px 8px 8px 16px !important;
+}
+.table-td-delete{
+    padding: 8px!important;
+}
+.todo-text{
+    overflow: auto;
+    width: 420px;
 }
