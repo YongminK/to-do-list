@@ -36,10 +36,11 @@ class ToDoList extends Component {
                         >
                             Active
                         </li>
-                        <li onClick={() => this.props.clearCompleted()} className='w3-button w3-ripple w3-red w3-bottombar'>Clear completed</li>
+                        
                     </ul>
 
                 </nav>
+                <li onClick={() => this.props.clearCompleted()} className='w3-button w3-ripple w3-allerta clear-completed'>Clear completed</li>
                 {this.props.todos.length !== 0 ? (
                     <table className='w3-table w3-centered '>
                         <thead>

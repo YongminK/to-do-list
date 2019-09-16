@@ -18,7 +18,7 @@
 }
 .text-input{
     display: inline-block;
-    width: 83%;
+    width: calc(100% - 80px);
     margin-right: 20px;
     cursor: pointer;
 }
@@ -27,7 +27,7 @@
     cursor: text;
 }
 .w3-bar .w3-bar-item{
-    min-width: 138px;
+    min-width: 33%;
 }
 .send-icon{
     margin-right: 10px;
@@ -65,8 +65,12 @@ ul{
 .w3-allerta {
     font-family: "Allerta Stencil", Sans-serif;
 }
+.clear-completed{
+    text-decoration: underline;
+    padding: 0;
+}
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 454px) {
     .w3-container{
         width: 100%;
     }
@@ -76,4 +80,17 @@ ul{
     .send-icon, .cancel-icon{
         display: none;
     }
+    .w3-bar .w3-bar-item{
+       width: 33%;
+    }
+    .text-input{
+        margin: 0;
+        width: 100%;
+    }
+    
   }
+
+@media screen and (max-width: 768px) and (min-width: 455px){    
+    .w3-container{
+        width: 80%;        
+    }    
