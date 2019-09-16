@@ -8,6 +8,7 @@ class App extends Component {
       <div className='App'>
         <div className="w3-container" >
           <div>
+            <h1 className="w3-allerta">TO DO LIST</h1>
             <div>
               <AddToDo />
             </div>

@@ -13,19 +13,21 @@
     justify-content: center;
 }
 .w3-container{
-    width: 700px;
+    width: 50%;
     margin-top: 50px;
 }
 .text-input{
     display: inline-block;
-    width: 588px;
+    width: 83%;
     margin-right: 20px;
+    cursor: pointer;
 }
 .text-input:focus{
     outline:none;
+    cursor: text;
 }
 .w3-bar .w3-bar-item{
-    width: 170px;
+    min-width: 138px;
 }
 .send-icon{
     margin-right: 10px;
@@ -58,5 +60,20 @@ ul{
 }
 .todo-text{
     overflow: auto;
-    width: 420px;
+    width: calc(100% - 200px);
 }
+.w3-allerta {
+    font-family: "Allerta Stencil", Sans-serif;
+}
+
+@media screen and (max-width: 374px) {
+    .w3-container{
+        width: 100%;
+    }
+    .text-input{
+        width: 100%;
+    }
+    .send-icon, .cancel-icon{
+        display: none;
+    }
+  }
