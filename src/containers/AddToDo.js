@@ -45,7 +45,7 @@ class AddToDo extends Component {
             <div>
                 <div>
                     <input 
-                        maxLength='40' 
+                        maxLength='100' 
                         onChange={this.onChangeTodoText}
                         tabIndex="0" 
                         onKeyDown={this.handleSubmit} 
