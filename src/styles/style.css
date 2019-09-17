@@ -88,7 +88,14 @@ ul {
     text-decoration: underline;
     padding: 0;
 }
-
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #e6e1e1;
+    padding: 5px 50px;
+}
 @media screen and (max-width: 454px) {
     .w3-container {
         width: 100%;

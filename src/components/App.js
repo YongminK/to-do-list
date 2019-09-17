@@ -14,6 +14,9 @@ class App extends Component {
             </div>
             <ToDoList />
           </div>
+          <div className='footer'>
+          last change: 17.09.2019 16:29
+          </div> 
         </div>
       </div>
     );
