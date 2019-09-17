@@ -22,8 +22,11 @@ class AddToDo extends Component {
     }
 
     onClickAddToDo() {
-        this.props.addTodo(this.state.todotext);
-        this.setState({ todotext: '' });
+        if(this.state.todotext !== '')
+        {
+            this.props.addTodo(this.state.todotext);
+            this.setState({ todotext: '' });
+        }
     }
 
     onClickCancel() {
